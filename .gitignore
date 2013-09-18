@@ -1,20 +1,80 @@
-obj
-bin
-bin/*
-deploy
-deploy/*
-_ReSharper.*
-*.csproj.user
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+###################
+src/*/bin/
+src/*/obj/
+*results.xml
+
+# Visual Studio Files
+######################
+*.DotSettings
+
+# BuildOutputs
+###################
+BuildOutput/*
+buildArtifact/*
+
+
+# GIT SVN CLONES SCRIPTS
+###################
+/git-svn-*
+
+# Resharper Folders
+###################
+*Resharper*
+_Resharper*/*
+
+# test results
+###################
+*/TestResults 
+
+
+# Local User Settings #
+###################
 *.user
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
 *.suo
-*.cache
-*.Cache
-~$*
+
+# Wraps #
+###################
+/wraps/*
+/wraps/_cache/
+/wraps/simpliciti.*/
+/wraps/openwrap/*.*
+/wraps/NUnit/
+/wraps/*.wrap
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+TestResult.xml
+
+
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
 Thumbs.db
-*.cache
-.svn
-reports
-reports/*
-/*.wrap
-*.bin
-*/*.bin
