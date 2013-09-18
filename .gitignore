@@ -3,6 +3,7 @@
 src/*/bin/
 src/*/obj/
 *results.xml
+scratch/*
 
 # Visual Studio Files
 ######################
@@ -50,6 +51,7 @@ _Resharper*/*
 /wraps/openwrap/*.*
 /wraps/NUnit/
 /wraps/*.wrap
+*.wrap
 
 # Packages #
 ############
