@@ -66,6 +66,11 @@ namespace OpenRasta.Hosting.HttpListener
             if (_isDisposed)
                 return;
             HttpListenerContext nativeContext;
+
+            //If not listening return immediately as this method is called on last time after Close()
+            if (!_listener.IsListening)
+                return;
+
             try
             {
                 nativeContext = _listener.EndGetContext(result);
